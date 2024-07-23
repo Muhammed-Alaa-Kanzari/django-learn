@@ -64,7 +64,7 @@ class Contributor(models.Model):
         return self.first_names
 
 
-#Relationship Model
+# Relationship Model
 class BookContributor(models.Model):
 
     class ContributionRole(models.TextChoices):

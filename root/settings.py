@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tuto',
     'reviews',
 ]
 
@@ -56,8 +55,9 @@ ROOT_URLCONF = 'root.urls'
 
 TEMPLATES = [
     {
+        # jinja2 djangoTemplate
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Directories
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
