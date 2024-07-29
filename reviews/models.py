@@ -31,7 +31,8 @@ class Book(models.Model):
     )
     isbn = models.CharField(
         max_length=20,
-        verbose_name="International Standard Book Number"
+        verbose_name="International Standard Book Number",
+        blank=True
     )
 
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)

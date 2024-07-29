@@ -19,3 +19,6 @@
 # Q Objects are used to perform complex queries
 
 ## Views (function-based views , class-based views)
+
+
+# AdminSite Attribute 

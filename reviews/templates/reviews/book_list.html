@@ -23,6 +23,12 @@
     >
     <br />
     {% endif %}
+    <a
+      class="btn btn-primary btn-sm active"
+      role="button"
+      href="{% url 'book_detail' item.book.pk %}"
+      >Reviews</a
+    >
   </li>
   {% endfor %}
 </ul>

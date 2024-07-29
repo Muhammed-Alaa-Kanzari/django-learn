@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-import reviews.views
+from .admin import admin_site
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin_site.urls),
     # path('', reviews.views.HomePage.as_view(), name='homepage')
     path('', include('reviews.urls'))
 
